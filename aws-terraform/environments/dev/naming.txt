@@ -1,0 +1,33 @@
+module.ec2.aws_instance.name  destroyed
+
+
+
+
+module.ec2[0].aws_instance.name
+module.ec2[1].aws_instance.name
+module.ec2[2].aws_instance.name
+module.ec2[3].aws_instance.name
+module.ec2[4].aws_instance.name
+
+
+
+module.s3[0].aws_s3_bucket.tfstate : "terrastates3back3",
+module.s3[1].aws_s3_bucket.tfstate : "terrastates3back4",
+module.s3[2].aws_s3_bucket.tfstate : "terrastates3back5",
+
+
+module.s3[0].aws_s3_bucket.tfstate : "terrastates3back2",
+module.s3[1].aws_s3_bucket.tfstate : "terrastates3back3",
+module.s3[2].aws_s3_bucket.tfstate : "terrastates3back4",
+module.s3[3].aws_s3_bucket.tfstate : "terrastates3back5",
+
+
+module.s3["bucket2"].aws_s3_bucket.tfstate: "terrastates3back3"
+module.s3["bucket1"].aws_s3_bucket.tfstate: "terrastates3back2"
+
+"bucket1" = {
+    name = "terrastates3back2"
+  }
+  "bucket2" = {
+    name = "terrastates3back3"
+  }
